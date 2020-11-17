@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for ToDo App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MrDavid0614/ToDo-App.git"
+  },
+  "keywords": [
+    "Backend",
+    "App",
+    "ToDo"
+  ],
+  "author": "mrDavid06",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDavid0614/ToDo-App/issues"
+  },
+  "homepage": "https://github.com/MrDavid0614/ToDo-App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "mongoose": "^5.10.13",
+    "nodemon": "^2.0.6"
+  }
+}
