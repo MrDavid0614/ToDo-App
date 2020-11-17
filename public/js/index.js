@@ -2,6 +2,8 @@ const logo = document.querySelector(".logo");
 const cardButton = document.querySelectorAll(".card-button");
 const modal = document.querySelector("#modal");
 const modalTitle = document.querySelector("#title");
+const sendButton = document.querySelector("#send-btn");
+const closeButton = document.querySelector("#close-btn");
 
 logo.addEventListener("click", () => {
 
@@ -19,11 +21,34 @@ cardButton.forEach(button => {
     })
 })
 
-window.onclick = function(event) {
+window.onclick = closeModal;
+
+closeButton.addEventListener("click", event => {
+
+    event.preventDefault();
+
+    setTimeout(() => {
+
+        modal.style.display = "none"
+
+    }, 100)
+
+});
+
+sendButton.addEventListener("click", () => {
+
+
+
+})
+
+function closeModal(event) {
+
+    event.preventDefault();
+
     if (event.target == modal) {
-      modal.style.display = "none";
+        modal.style.display = "none";
     }
+  
+      modalTitle.value = "";
 
-    modalTitle.value = "";
-
-  }
+}
